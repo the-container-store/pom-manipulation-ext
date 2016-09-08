@@ -58,7 +58,7 @@ public class PomIOTest
         FileUtils.copyFile( pom, targetFile );
 
         Model model = new Model();
-        model.setGroupId( "org.commonjava.maven.ext.versioning.test" );
+        model.setGroupId( "com.containerstore.maven.ext.versioning.test" );
         model.setArtifactId( "dospom" );
         model.setVersion( "1.0" );
         model.setPackaging( "pom" );
