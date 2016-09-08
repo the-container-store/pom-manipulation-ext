@@ -480,10 +480,6 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
       </plugin>
 
@@ -522,7 +518,6 @@
     <module>io</module>
     <module>core</module>
     <module>ext</module>
-    <module>integration-test</module>
   </modules>
 
   <profiles>
