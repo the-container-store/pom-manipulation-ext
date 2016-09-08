@@ -43,7 +43,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Enumeration;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -52,7 +51,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.jar.Manifest;
 
-import static org.apache.commons.io.IOUtils.closeQuietly;
+import static org.apache.commons.io.IOUtils.*;
 
 /**
  * Utility class used to read raw models for POMs, and rewrite any project POMs that were changed.
@@ -204,10 +203,6 @@ public class PomIO
                                 break;
                             }
                         }
-
-                        doc.addContent( Collections.<Content>singletonList(
-                                        new Comment( "\nModified by POM Manipulation Extension for Maven "
-                                                                     + manifestInformation + "\n" ) ) );
                     }
                 }
             });
