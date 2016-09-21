@@ -185,10 +185,6 @@ public class PomIO
                                 break;
                             }
                         }
-
-                        doc.addContent( Arrays.<Content> asList( new Comment(
-                                                                              "\nModified by POM Manipulation Extension for Maven "
-                                                                                  + manifestInformation + "\n" ) ) );
                     }
                 }
             } );
