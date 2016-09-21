@@ -15,9 +15,9 @@
  */
 package org.commonjava.maven.ext.manip.state;
 
-import java.util.Properties;
-
 import org.commonjava.maven.ext.manip.impl.ProjectSourcesInjectingManipulator;
+
+import java.util.Properties;
 
 /**
  * Captures configuration parameters for use with {@link ProjectSourcesInjectingManipulator}. This state implementation captures two properties:
@@ -66,8 +66,8 @@ public class ProjectSourcesInjectingState
      */
     public ProjectSourcesInjectingState( final Properties userProperties )
     {
-        enabled = !Boolean.parseBoolean( userProperties.getProperty( PROJECT_SOURCES_SKIP_PROPERTY, "false" ) );
-        metadataEnabled = !Boolean.parseBoolean( userProperties.getProperty( BMMP_SKIP_PROPERTY, "false" ) );
+        enabled = false;
+        metadataEnabled = false;
 
         projectSrcPluginVersion =
             userProperties.getProperty( PROJECT_SOURCES_PLUGIN_VERSION_PROPERTY, DEFAULT_PROJECT_SOURCES_PLUGIN_VERSION );
