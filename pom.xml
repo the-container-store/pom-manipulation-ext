@@ -29,6 +29,23 @@
   <description>
     lib/ext-style extension for Apache Maven that allows pre-processing of Maven pom.xml's.
   </description>
+
+  <distributionManagement>
+    <repository>
+      <id>tcs-releases</id>
+      <url>
+        http://nexus.containerstore.com/nexus/content/repositories/releases
+      </url>
+      <uniqueVersion>false</uniqueVersion>
+    </repository>
+    <snapshotRepository>
+      <id>tcs-snapshots</id>
+      <url>
+        http://nexus.containerstore.com/nexus/content/repositories/snapshots
+      </url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+  </distributionManagement>
   
   <licenses>
     <license>
